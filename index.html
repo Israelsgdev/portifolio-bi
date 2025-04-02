@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Israel Santana | Power BI Specialist</title>
+    <meta name="description"
+        content="Portfólio profissional de Israel Santana - Soluções em Power BI para transformar seus dados em insights valiosos">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet">
+    <!-- CSS Customizado -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    <!-- Navbar Simplificada -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">ISRAEL SANTANA <span>| POWER BI</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfólio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicos">Soluções</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section com Gráfico Estático -->
+    <header id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <span class="hero-subtitle">Power BI Specialist</span>
+                        <h1>Israel Santana</h1>
+                        <p class="hero-description">Transformo dados complexos em insights claros e acionáveis com
+                            dashboards inteligentes e personalizados.</p>
+                        <div class="hero-buttons">
+                            <a href="#portfolio" class="btn btn-primary btn-lg me-3">Ver Portfólio</a>
+                            <a href="#contato" class="btn btn-outline-light btn-lg">Fale Comigo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="static-chart-container">
+                        <img src="img/static-chart.png" alt="Gráfico de Resultados" class="img-fluid static-chart">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Portfólio - Seção Principal -->
+    <section id="portfolio" class="py-5">
+        <div class="container">
+            <div class="section-title">
+                <h2>Meu Portfólio</h2>
+                <p>Alguns dos projetos recentes que desenvolvi para clientes</p>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="portfolio-filter">
+                        <button class="btn btn-filter active" data-filter="all">Todos</button>
+                        <button class="btn btn-filter" data-filter="vendas">Vendas</button>
+                        <button class="btn btn-filter" data-filter="rh">RH</button>
+                        <button class="btn btn-filter" data-filter="financeiro">Financeiro</button>
+                        <!-- <button class="btn btn-filter" data-filter="logistica">Logística</button> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="vendas">
+                    <div class="card h-100">
+                        <div class="portfolio-img-container">
+                            <img src="img/projeto-vendas.jpg" class="card-img-top" alt="Dashboard de Vendas">
+                            <div class="portfolio-overlay">
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#modalVendas">Ver Detalhes</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Dashboard de Vendas</h4>
+                            <p class="card-text">Solução completa para análise de performance de vendas com integração
+                                em tempo real.</p>
+                            <div class="portfolio-tags">
+                                <span class="badge bg-primary">Power BI</span>
+                                <span class="badge bg-secondary">DAX</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="rh">
+                    <div class="card h-100">
+                        <div class="portfolio-img-container">
+                            <img src="img/projeto-rh.png" class="card-img-top" alt="Dashboard de RH">
+                            <div class="portfolio-overlay">
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalRH">Ver
+                                    Detalhes</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Análise de Indicadores de RH</h4>
+                            <p class="card-text">Monitoramento de turnover, absenteísmo e satisfação de colaboradores.
+                            </p>
+                            <div class="portfolio-tags">
+                                <span class="badge bg-primary">Power BI</span>
+                                <span class="badge bg-success">Power Query</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="financeiro">
+                    <div class="card h-100">
+                        <div class="portfolio-img-container">
+                            <img src="img/projeto-financeiro.jpg" class="card-img-top" alt="Dashboard Financeiro">
+                            <div class="portfolio-overlay">
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#modalFinanceiro">Ver Detalhes</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Controle Financeiro Corporativo</h4>
+                            <p class="card-text">Dashboard integrado com ERP para acompanhamento financeiro em tempo
+                                real.</p>
+                            <div class="portfolio-tags">
+                                <span class="badge bg-primary">Power BI</span>
+                                <span class="badge bg-danger">SQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="text-center mt-4">
+                <a href="#" class="btn btn-outline-primary btn-lg">Ver Todos os Projetos</a>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Seção de Soluções (antiga Serviços) -->
+    <section id="servicos" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Como Posso Ajudar Sua Empresa</h2>
+                <p>Soluções personalizadas em Power BI para seu negócio</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="solucao-card">
+                        <div class="solucao-icon">
+                            <i class="fas fa-chart-simple"></i>
+                        </div>
+                        <div class="solucao-content">
+                            <h3>Dashboards Executivos</h3>
+                            <p>Criação de painéis estratégicos para tomada de decisão com indicadores-chave de
+                                desempenho (KPIs) personalizados para sua empresa.</p>
+                            <ul class="solucao-beneficios">
+                                <li><i class="fas fa-check-circle"></i> Visualização clara e intuitiva</li>
+                                <li><i class="fas fa-check-circle"></i> Atualização automática dos dados</li>
+                                <li><i class="fas fa-check-circle"></i> Acesso em qualquer dispositivo</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="solucao-card">
+                        <div class="solucao-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="solucao-content">
+                            <h3>Integração de Dados</h3>
+                            <p>Conecte todas suas fontes de dados em um único lugar, com modelagem eficiente para
+                                análises rápidas e confiáveis.</p>
+                            <ul class="solucao-beneficios">
+                                <li><i class="fas fa-check-circle"></i> Conexão com múltiplas fontes</li>
+                                <li><i class="fas fa-check-circle"></i> Transformação e limpeza de dados</li>
+                                <li><i class="fas fa-check-circle"></i> Modelagem dimensional otimizada</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="solucao-card">
+                        <div class="solucao-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="solucao-content">
+                            <h3>Automação de Relatórios</h3>
+                            <p>Substitua planilhas manuais e processos demorados por relatórios automatizados que
+                                economizam tempo e reduzem erros.</p>
+                            <ul class="solucao-beneficios">
+                                <li><i class="fas fa-check-circle"></i> Eliminação de processos manuais</li>
+                                <li><i class="fas fa-check-circle"></i> Distribuição automática</li>
+                                <li><i class="fas fa-check-circle"></i> Alertas e notificações</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="solucao-card">
+                        <div class="solucao-icon">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                        </div>
+                        <div class="solucao-content">
+                            <h3>Implantação Power BI Cloud</h3>
+                            <p>Configuração completa do Power BI Service para compartilhamento seguro, colaboração e
+                                acesso mobile aos seus relatórios.</p>
+                            <ul class="solucao-beneficios">
+                                <li><i class="fas fa-check-circle"></i> Compartilhamento controlado</li>
+                                <li><i class="fas fa-check-circle"></i> Atualizações automáticas</li>
+                                <li><i class="fas fa-check-circle"></i> Acesso via app mobile</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato Atualizada -->
+    <section id="contato" class="py-5">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-12">
+                    <div class="section-title text-start">
+                        <h2>Vamos Conversar</h2>
+                        <p>Entre em contato para discutir como posso ajudar sua empresa com Power BI</p>
+                    </div>
+
+                    <div class="contato-info  d-md-flex">
+                        <div class="contato-item me-5 ">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:israel_kle@hotmail.com">
+                                    <p>israel_kle@hotmail.com</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contato-item me-5">
+                            <!-- <i class="fas fa-phone-alt"></i> -->
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <div>
+                                <h4>Whatsapp</h4>
+                                <a href="https://wa.me/+5577981549456">
+                                    <p>+55 (77) 98154-9456</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contato-item me-5">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/israel-sang/">
+                                    <p>linkedin.com/in/israel-sang</p>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="social-links ">
+                        <a href="https://www.linkedin.com/in/israel-sang/" class="social-link"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.github.com/israelsgdev" class="social-link"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/israel_sang" class="social-link"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+
+                </div>
+                <!-- 
+                <div class="col-lg-6">
+                    <form id="contactForm" class="contato-form">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="nome" placeholder="Seu nome" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="Seu email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="empresa" placeholder="Sua empresa">
+                        </div>
+                        <div class="mb-3">
+                            <select class="form-select" id="assunto">
+                                <option selected>Qual o assunto do seu interesse?</option>
+                                <option>Dashboard Personalizado</option>
+                                <option>Integração de Dados</option>
+                                <option>Treinamento Power BI</option>
+                                <option>Outro</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="mensagem" rows="4" placeholder="Como posso ajudar?"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg w-100">Enviar Mensagem</button>
+                    </form>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Atualizado -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-lg-start">
+                    <div class="footer-brand">
+                        ISRAEL SANTANA <span>| POWER BI SPECIALIST</span>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <div class="footer-links">
+                        <a href="#home">Início</a>
+                        <a href="#portfolio">Portfólio</a>
+                        <a href="#servicos">Soluções</a>
+                        <a href="#contato">Contato</a>
+                    </div>
+                    <div class="footer-copy">
+                        &copy; <span id="year"></span> Israel Santana. Todos os direitos reservados.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modais do Portfólio -->
+    <!-- Modal Vendas -->
+    <div class="modal fade" id="modalVendas" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Dashboard de Vendas - Solução Completa</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="modal-carousel">
+                                <div id="carouselVendas" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="img/projeto-vendas-1.jpg" class="d-block w-100"
+                                                alt="Dashboard Vendas 1">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/projeto-vendas-2.jpg" class="d-block w-100"
+                                                alt="Dashboard Vendas 2">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/projeto-vendas-3.jpg" class="d-block w-100"
+                                                alt="Dashboard Vendas 3">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselVendas"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Anterior</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselVendas"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Próximo</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="modal-details">
+                                <h4>Detalhes do Projeto</h4>
+                                <p>Dashboard desenvolvido para rede varejista com mais de 100 lojas, permitindo análise
+                                    de performance por diversos ângulos.</p>
+
+                                <div class="modal-features">
+                                    <h5>Principais Funcionalidades:</h5>
+                                    <ul>
+                                        <li>Análise comparativa por período</li>
+                                        <li>Segmentação por região, produto e vendedor</li>
+                                        <li>Indicadores de desempenho (KPIs)</li>
+                                        <li>Previsão de vendas usando machine learning</li>
+                                        <li>Integração com banco de dados SQL Server</li>
+                                    </ul>
+                                </div>
+
+                                <div class="modal-tech">
+                                    <h5>Tecnologias Utilizadas:</h5>
+                                    <div class="tech-badges">
+                                        <span class="badge bg-primary">Power BI</span>
+                                        <span class="badge bg-secondary">DAX</span>
+                                        <span class="badge bg-success">Power Query</span>
+                                        <span class="badge bg-danger">SQL</span>
+                                    </div>
+                                </div>
+
+                                <div class="modal-testimonial">
+                                    <blockquote>
+                                        "O dashboard desenvolvido pelo Israel transformou nossa forma de analisar
+                                        vendas, reduzindo o tempo de tomada de decisão em 60%."
+                                        <footer>— Diretor Comercial, Empresa XYZ</footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <a href="#contato" class="btn btn-primary" data-bs-dismiss="modal">Quero um Projeto Similar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS Customizado -->
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</body>
+
+</html>
